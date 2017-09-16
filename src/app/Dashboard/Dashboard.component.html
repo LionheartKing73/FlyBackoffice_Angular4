@@ -1,0 +1,72 @@
+
+<div class="row" id="dashboard">
+  <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12" id="header">
+    <div class="col-md-2" id="logo">
+      <img src="../../assets/pro_img/logo.png">
+    </div>
+    <div class="col-md-8"></div>
+    <div class="col-md-2" id="user">
+      <img src="../../assets/pro_img/user.png">
+      <select id="seluser" [(ngModel)]="currentUser"> 
+            <option >
+               {{currentUser}}
+            </option>
+          </select>
+    </div>
+  </div>
+  <div id="dashboard_Content" class="row">
+    <div id="left_menu" class="col-md-2">
+              <div>
+                <input type="text" name="quickmenu" value="" placeholder="Quick Menu" class="Quickmenu" [(ngModel)]="quickmenu" />
+              </div>
+              <div class="sidebar-category sidebar-category-visible">
+            <div class="category-content no-padding">
+              <ul class="navigation navigation-main navigation-accordion">
+
+                <!-- Main -->
+                
+                <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                <li>
+                  <a href="#"><i class="icon-stack2"></i> <span>User Management</span></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-copy"></i> <span>Core Configuration</span></a>
+                  <ul>
+                    <li><a href="#" id="layout1">Cultures/Locales</a></li>
+                    <li><a href="#" id="layout2">Site Properties</a></li>
+                    <li><a href="#" id="layout3">Scenarios</a></li>
+                    <li><a href="/Airlines" id="layout4">Airlines</a></li>
+                    <li><a href="#" id="layout5">Alliances</a></li>
+                    <li><a href="#" id="layout5">OTAs</a></li>
+                    <li><a href="#" id="layout5">API Developers</a></li>
+                    <li><a href="#" id="layout5">API Configuration</a></li>
+                    <li><a href="#" id="layout5">Api tests</a></li>
+                    <li><a href="#" id="layout5">Browser Behavior</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-droplet2"></i> <span>Engine Configuration</span></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-stack"></i> <span>MetaSearch Config</span></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-stack"></i> <span>GEO Data</span></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-stack"></i> <span>Calenders</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    <div id="content" class="col-md-10">
+        <app-Airlines>
+        </app-Airlines>
+    </div>
+  </div>
+</div>
+
+
+
+

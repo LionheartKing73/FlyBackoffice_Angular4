@@ -1,0 +1,36 @@
+<div class="widget-content row" >
+     
+        <table class="table table-striped">
+       
+          <tr *ngFor="let airline of result_airlines">
+            <td >
+               {{airline.id}}
+            </td>
+            <td >
+               {{airline.code}}
+            </td>
+            <td>
+               {{airline.name}}
+            </td>
+            <td >
+               {{airline.shortName}}  
+            </td>
+            <!-- <td >
+               {{airline.country}}  
+            </td> -->
+            <td width="5%">
+               {{airline.website}}  
+            </td>
+            <td >
+               {{airline.alliance}}  
+            </td>
+
+            <td width="5%">
+              <a ui-sref="customer.edit({id: customer.id})"><button class="btn  btn-success">Edit</button></a>
+            </td>
+            <td width="5%">
+              <a><button class="btn  btn-success" style="background-color: #e94649;border: none;">Delete</button></a>
+            </td>
+          </tr>
+        </table> 
+      </div>
